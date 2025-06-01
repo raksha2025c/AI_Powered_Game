@@ -1,2 +1,2 @@
 # AI_Powered_Game
-AI-powered, text-based game using LLM
+This project is a hands-on implementation of an AI-powered, text-based game built using Large Language Models (LLMs). Developed by following the [Building an AI-Powered Game](https://learn.deeplearning.ai/courses/building-an-ai-powered-game) course by Deeplearning.ai in collaboration with Together AI and AI Dungeon, this project demonstrates how to design immersive game worlds, characters, and storylines using hierarchical content generation and prompt engineering.
