@@ -22,8 +22,8 @@ The reason for using `tools=[]` is because it is a valid value indicating that n
 **Bug 2: API Error 422: Tokens must be <= 8193**
 <br>
 <p align="center">
-    <img src="Bugs/L2_1" alt="Bug2">
-    <img src="Bugs/L2_2">
+    <img src="Bugs/L2_1.png" alt="Bug2">
+    <img src="Bugs/L2_2.png">
 </p>
 
 If you see the error above, it means that the `70-B Llama 3` chat model on Together has an 8192-token context window (prompt + reply) but our prompt alone is nearly 6376 tokens. Because the Together Python client injects a default max_tokens=2048 (or max_new_tokens) when we don’t set the maximum token explicitly, the server sees:
@@ -33,3 +33,6 @@ Solution:<br>
 <p align="center">
     <img src="Bugs/L2_1_Solution.png" alt="Bug2 Solution">
 </p>
+
+
+**NOTE:** The embedded model used in this course is now deprecated by Google.
